@@ -24,7 +24,7 @@ function M.error(...)
     if zk_config.debug then
       print(table.concat(...))
     end
-    vim.api.nvim_error_write(table.concat(vim.tbl_flatten {...}) .. "\n")
+    vim.api.nvim_err_write(table.concat(vim.tbl_flatten {...}) .. "\n")
   end
 end
 
